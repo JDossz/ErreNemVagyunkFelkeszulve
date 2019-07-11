@@ -1,32 +1,45 @@
 <!DOCTYPE html>
 <html lang="hu">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <title>Login Oldal</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <link rel="stylesheet" href="../css/loginOldal.css">
-    </head>
-    <body>
-        <header>
-            <div id="navbarDiv">
-                <nav>
-                    <a href="">BEJELENTKEZÉS</a>
-                    <a href="">FELHASZNÁLÓK</a>
-                </nav>
-            </div>
-        </header>
-        <div class="container">
-            <div class="div div-image div-rounded">belépési ikon</div>
-            <div class="div div-image">felhasználó ikon</div>
-            <div class="div div-input">email input</div>
-            <div class="div div-image">jelszó ikon</div>
-            <div class="div div-input">jelszó input</div>
-            <div class="div div-login">login gomb</div>
+    <title>Login Oldal</title>
+
+    <link rel="stylesheet" href="../css/loginOldal.css">
+</head>
+
+<body>
+    <header>
+        <div id="navbarDiv">
+            <nav>
+                <a href="">BEJELENTKEZÉS</a>
+                <a href="">FELHASZNÁLÓK</a>
+            </nav>
         </div>
+    </header>
+    <div class="container">
+        <div class="div div-image div-rounded"></div>
+        <div class="rowDiv">
+            <div class="div div-image user-icon"></div>
+            <div class="div div-input">
+                <input type="email" name="emailInput" id="emailInput">
+            </div>
+        </div>
+        <div class="rowDiv">
+            <div class="div div-image password-icon"></div>
+            <div class="div div-input">
+                <input type="password" name="passwordInput" id="passwordInput">
+            </div>
+        </div>
+        <div class="div div-login rowDiv">
+            <button class="button loginButton">BEJELENTKEZÉS</button>
+        </div>
+    </div>
 
-        <script src="/js/loginOldal.js"></script>
-    </body>
+    <script src="/js/loginOldal.js"></script>
+</body>
+
 </html>

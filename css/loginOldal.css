@@ -9,7 +9,7 @@
 
 body {
     margin: 0;
-    background-color: #c2a7a1;
+    background-color: #feeae2;
     background-image: url(../img/skyline4.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -20,8 +20,7 @@ header {
 }
 
 .container {
-    background: #feeae2;
-    border: 10px solid #2f6061;
+    background: #7b8988;
     border-radius: 20px;
     margin: 50px auto;
     position: relative;
@@ -30,9 +29,8 @@ header {
 }
 
 .div {
-    position: relative;
-    border: 2px solid #7b8988;
     padding: 10px;
+    background-repeat: no-repeat;
 }
 
 #navbarDiv {
@@ -51,13 +49,50 @@ nav a:hover {
 
 .div-rounded {
     border-radius: 50%;
-    height: 100px;
-    width: 100px;
+    width: 150px;
+    height: 150px;
+    background-image: url(../img/);
+    margin: 30px auto 50px;
 }
 
 .div-image {
     height: 30px;
     width: 30px;
+    background-size: 100%;
+}
+
+.user-icon {
+    background-image: url(../img/);
 }
 
 .div-input {}
+
+input {
+    padding: 10px;
+    width: 300px;
+    height: 20px;
+    border-radius: 30px;
+}
+
+
+.password-icon {
+    background-image: url(../img/);
+}
+
+.rowDiv {
+    overflow: auto;
+    padding: 10px;
+    width: 100%;
+}
+
+/* .rowDiv>div {
+    float: left;
+} */
+
+.button {
+    padding: 10px;
+    border-radius: 5px;
+    margin: auto;
+    background-color: #2f6061;
+    color: #feeae2;
+}
