@@ -1,18 +1,33 @@
+/*
+#2f6061
+#7b8988
+#323131
+#c2a7a1
+#feeae2
+*/
+
+
 body {
     margin: 0;
+    background-color: #c2a7a1;
+    background-image: url()
 }
 
+
 .container {
-    background: #0DF;
+    background: #feeae2;
+    border: 10px solid #2f6061;
+    border-radius: 20px;
     margin: 50px auto;
     position: relative;
-    height: 500px;
-    width: 500px;
+    height: 60vh;
+    width: 40vw;
 }
 
 .div {
     position: relative;
     border: 2px solid #000;
+    padding: 10px;
 }
 
 .div-rounded {
@@ -26,7 +41,4 @@ body {
     width: 30px;
 }
 
-.div-input {
-
-}
-
+.div-input {}
