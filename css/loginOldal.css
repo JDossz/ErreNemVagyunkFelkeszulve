@@ -10,9 +10,14 @@
 body {
     margin: 0;
     background-color: #c2a7a1;
-    background-image: url()
+    background-image: url(../img/skyline4.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
+header {
+    min-height: 500px;
+}
 
 .container {
     background: #feeae2;
@@ -26,8 +31,22 @@ body {
 
 .div {
     position: relative;
-    border: 2px solid #000;
+    border: 2px solid #7b8988;
     padding: 10px;
+}
+
+#navbarDiv {
+    float: right;
+    margin-top: 20px;
+}
+
+nav a {
+    color: #feeae2;
+    padding: 0 30px;
+}
+
+nav a:hover {
+    color: #323131;
 }
 
 .div-rounded {
