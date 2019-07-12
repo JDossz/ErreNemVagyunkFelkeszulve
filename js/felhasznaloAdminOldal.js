@@ -20,7 +20,7 @@ var User = {
     this.showAll();
   },
   showAll() {
-    console.log(this.data); // ez ír bele a html-be
+    // console.log(this.data); // ez ír bele a html-be
 
     var nodeTBody = document.querySelector('.usersTable>tbody');
     nodeTBody.textContent = '';
@@ -37,15 +37,43 @@ var User = {
       // nodeButtonEdit.addEventListener('click', edit);
       var nodeButtonDel = document.createElement('button');
       nodeButtonDel.textContent = 'Törlés';
-      // nodeButtonDel.addEventListener('click', remove);
+      nodeButtonDel.addEventListener('click', this.remove);
       nodeTr.appendChild(nodeButtonEdit);
       nodeTr.appendChild(nodeButtonDel);
       nodeTBody.appendChild(nodeTr);
     }
   },
-  remove() {},
+  remove() {
+    var nodeButtonDel = event.target;
+    var nodeTr = nodeButtonDel.parentNode;
+    var userID = parseInt(nodeTr.firstElementChild.innerHTML);
+    // console.log(userID);
+    var user;
+
+    user = (getUserById(userID));
+    for (var i = 0; i < User.data.length; i++) {
+      if (user === User.data[i]) {
+        User.data.splice(i, 1);
+        break;
+      }
+    }
+
+    User.showAll();
+  },
   create() {},
   stored() {}
 
 };
 User.getData();
+
+function getUserById(userID) {
+  var result = null;
+
+  for (var i = 0; i < User.data.length; i++) {
+    if (userID === User.data[i].id) {
+      result = User.data[i];
+      break;
+    }
+  }
+  return result;
+}
