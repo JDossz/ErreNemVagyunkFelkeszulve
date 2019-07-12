@@ -9,16 +9,15 @@
 
 body {
     margin: 0;
-    background-color: #8a9695;
-    background-image: url(../img/skyline4.jpg);
+    background-color: #97c6d3;
+    background-image: url(../img/skyline2.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
 header {
-    min-height: 700px;
+    min-height: 600px;
 }
-
 
 #navbarDiv {
     float: right;
@@ -55,12 +54,12 @@ td {
 
 .usersTable th,
 tr:nth-child(even) {
-    background-color: #7b8988;
+    background-color: #5691c2;
 }
 
 
 .usersTable tr:nth-child(odd) {
-    background-color: #8a9695;
+    background-color: #4eadb1;
 }
 
 td {
@@ -71,7 +70,7 @@ button {
     padding: 5px;
     margin: 5px;
     border-radius: 5px;
-    background-color: #8a9695;
+    background-color: #97c6d3;
     border: 1px solid #2f6061;
     color: #2f6061;
     font-weight: 600;
@@ -90,3 +89,4 @@ button:active {
     transform: translateY(3px);
     /*transform: translateX(3px);*/
 }
+
