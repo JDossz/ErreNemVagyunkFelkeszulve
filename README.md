@@ -2,16 +2,18 @@ Dorka:
 loginOldal.html
 login oldal animálása
 login error
+felhasznaloiAdminOldal.css
 
 Rebeka:
 loginOldal.html
 loginOldal.css
 adattömb kiíratása a felhasznaloiAdminOldal.html-be
-felhasználó törlése gomb
 felhasznaloiAdminOldal.css
+felhasználó törlése gomb
 
 Szilvi:
-új felhasználó bevitele --> ide error ha üres vmelyik input
+új felhasználó bevitele
+error ha üres vmelyik input
 
 Oláh:
 szerkesztés gomb, input validálás
