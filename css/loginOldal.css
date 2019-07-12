@@ -151,6 +151,21 @@ input {
     color: #feeae2;
 }
 
+.container {
+    text-align: center;
+}
+
+.visibilityNone {
+    display: none;
+}
+
+.visibility {
+    display: visible;
+}
+
+.newRegistrationButton {
+    margin-top: 30px;
+}
 .button:hover {
     animation-name: colorToBlue;
     animation-duration: 2s;

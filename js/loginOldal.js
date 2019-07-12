@@ -43,3 +43,39 @@ function loginClickHandler() {
     }
   }
 }
+
+var newAdminButton = document.querySelector('.newAdminButton');
+newAdminButton.addEventListener('click', adminButtonClickHandler, false);
+
+function adminButtonClickHandler() {
+  var registration = document.querySelector('.registration');
+  var login = document.querySelector('.loginInterface');
+
+  registration.classList.remove('visibilityNone');
+  registration.classList.add('visbility');
+  login.classList.add('visibilityNone');
+}
+
+var newRegistration = document.querySelector('.newRegistrationButton');
+newRegistration.addEventListener('click', newRegistrationClickHandler, false);
+
+function newRegistrationClickHandler() {
+  var newEmail = document.querySelector('#newEmailInput');
+  var newPassword = document.querySelector('#newPasswordInput');
+
+
+  for (var i = 0; i < adminUsers.length; i += 1) {
+    if (newEmail.value === adminUsers[i].email) {
+      alert('Már van ilyen felhasználó');
+      break;
+    } else {
+      adminUsers.push({
+        email: newEmail.value,
+        password: newPassword.value
+      });
+      break;
+    }
+  }
+  newEmail.value = '';
+  newPassword.value = '';
+}
