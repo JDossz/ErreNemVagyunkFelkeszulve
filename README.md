@@ -1,5 +1,6 @@
 Dorka:
 login oldal animálása
+login error
 
 Rebeka:
 loginOldal.html
@@ -22,6 +23,5 @@ loginOldal.js
 
 ami még kell:
 loginOldal a login ablakon nyíljon meg (scroll down)
-loginOnldal bejelentkezési error
 felhasználó törlése
 fő css
