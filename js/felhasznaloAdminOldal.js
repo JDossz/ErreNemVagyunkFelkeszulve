@@ -28,5 +28,3 @@ var User = {
 
 };
 User.getData();
-
-

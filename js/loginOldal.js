@@ -1,32 +1,45 @@
-var User = {
-  data: [],
-  //   init() {
-  //     this.getData();
-  //   },
-  getData() {
-    var request = new XMLHttpRequest();
-    // a this itt az xmlhttprequest lenne, ezért arrow function-nal kell írni, mert az nem bind-onja a this-t
-    request.onreadystatechange = () => {
-      if (request.readyState === 4 && request.status === 200) {
-        this.callback(request.responseText);
-      }
-    };
-    request.open('GET', '/data/users.json');
-    request.send();
-  },
-  // ezzel töltöm fel a data tömböt, ha a válasz megérkezett
-  callback(jsonContent) {
-    this.data = JSON.parse(jsonContent).users;
-    this.showAll();
-  },
-  showAll() {
-    console.log(this.data); // ez ír bele a html-be
-  },
-  remove() {},
-  create() {},
-  stored() {}
-
-};
-User.getData();
+var adminUsers = [{
+  email: 'tamas.takacs@gmail.com',
+  password: 'Tomi@88'
+},
+{
+  email: 'rebeka.grosics@gmail.com',
+  password: 'Rebeka@9'
+},
+{
+  email: 'daniel.olah@gmail.com',
+  password: 'Olah@6'
+},
+{
+  email: 'dorottya.juhasz@gmail.com',
+  password: 'Dorka@42'
+},
+{
+  email: 'szilvia.horvath@gmail.com',
+  password: 'Szilvi@3'
+}
+];
 
 
+// ha az felhasználó input mező és pw mező értéke típusosan-azonosan egyenlő, akkor vigyen át a felhaszanloAdminOldal.html-re
+var loginButton = document.querySelector('.loginButton');
+loginButton.addEventListener('click', loginClickHandler, false);
+
+function loginClickHandler() {
+  var emailInputValue = document.querySelector('#emailInput').value;
+  var passwordInputValue = document.querySelector('#passwordInput').value;
+
+  for (var i = 0; i < adminUsers.length; i += 1) {
+    if (emailInputValue === adminUsers[i].email && passwordInputValue === adminUsers[i].password) {
+      window.location = '../html/felhasznaloAdminOldal.html';
+      break;
+    } else if (emailInputValue === adminUsers[i].email && passwordInputValue !== adminUsers[i].password) {
+      alert('Hibás jelszó');
+    } else if (emailInputValue !== adminUsers[i].email && passwordInputValue === adminUsers[i].password) {
+      alert('Hibás felhasználónév');
+    } else if (emailInputValue !== adminUsers[i].email || emailInputValue === '') {
+      alert('Nincs ilyen felhasználó');
+      break;
+    }
+  }
+}
