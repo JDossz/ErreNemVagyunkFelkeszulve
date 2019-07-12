@@ -11,14 +11,14 @@
 
 body {
     margin: 0;
-    background-color: #feeae2;
+    background-color: #8a9695;
     background-image: url(../img/skyline.jpeg);
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
 header {
-    min-height: 500px;
+    min-height: 700px;
 }
 
 .container {
