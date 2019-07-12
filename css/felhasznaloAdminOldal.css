@@ -114,7 +114,10 @@ button:active {
 #toTop:hover {
     color: green;
     text-decoration: underline;
-    font-size: 15pt;
+    font-size: 17pt;
+    /* font-variant: small-caps;
+    font-stretch: extra-condensed; */
     float: right;
     margin: 20px;
 }
+
