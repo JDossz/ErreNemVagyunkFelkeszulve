@@ -16,6 +16,8 @@ loginOldal.js
 
 
 
+
+ami még kell:
 (login oldal animálása --> bejelentkező ablak leereszkedik a helyére)
 felhasználó törlése
 fő css
