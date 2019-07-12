@@ -90,3 +90,19 @@ button:active {
     /*transform: translateX(3px);*/
 }
 
+#toTop:link,
+#toTop:visited {
+    color: green;
+    text-decoration: none;
+    font-size: 15pt;
+    float: right;
+    margin: 20px;
+}
+
+#toTop:hover {
+    color: green;
+    text-decoration: underline;
+    font-size: 15pt;
+    float: right;
+    margin: 20px;
+}
