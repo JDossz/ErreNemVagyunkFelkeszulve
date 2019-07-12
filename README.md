@@ -8,6 +8,7 @@ loginOldal.html
 loginOldal.css
 adattömb kiíratása a felhasznaloiAdminOldal.html-be
 felhasználó törlése gomb
+felhasznaloiAdminOldal.css
 
 Szilvi:
 új felhasználó bevitele --> ide error ha üres vmelyik input
@@ -27,4 +28,4 @@ loginOldal.js
 ami még kell:
 loginOldal a login ablakon állva nyíljon meg (scroll down)
 a felhasználói oldal a táblázaton állva nyíljon meg
-fő css
+
