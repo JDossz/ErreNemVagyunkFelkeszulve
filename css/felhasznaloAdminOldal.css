@@ -76,3 +76,17 @@ button {
     color: #2f6061;
     font-weight: 600;
 }
+
+button:hover {
+    color: #feeae2;
+    border: 1px solid #feeae2;
+    background-color: #2f6061;
+}
+
+button:active {
+    color: #272626;
+    border: 1px solid #272626;
+    background-color: #2f6061;
+    transform: translateY(3px);
+    /*transform: translateX(3px);*/
+}
