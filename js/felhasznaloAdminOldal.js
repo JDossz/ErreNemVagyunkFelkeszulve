@@ -33,10 +33,12 @@ var User = {
         nodeTr.appendChild(nodeTd);
       }
       var nodeButtonEdit = document.createElement('button');
-      nodeButtonEdit.textContent = 'Szerkesztés';
+      nodeButtonEdit.textContent = '✎ Szerkesztés';
+      nodeButtonEdit.setAttribute('class', 'button--edit');
       // nodeButtonEdit.addEventListener('click', edit);
       var nodeButtonDel = document.createElement('button');
-      nodeButtonDel.textContent = 'Törlés';
+      nodeButtonDel.textContent = '❌ Törlés';
+      nodeButtonDel.setAttribute('class', 'button--del');
       nodeButtonDel.addEventListener('click', this.remove);
       nodeTr.appendChild(nodeButtonEdit);
       nodeTr.appendChild(nodeButtonDel);

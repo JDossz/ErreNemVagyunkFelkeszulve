@@ -62,6 +62,11 @@ tr:nth-child(even) {
     background-color: #4eadb1;
 }
 
+tr:hover {
+ font-style: italic;
+ font-weight: bold;
+}
+
 td {
     color: #272626;
 }
@@ -77,7 +82,6 @@ button {
 }
 
 button:hover {
-    color: #feeae2;
     border: 1px solid #feeae2;
     background-color: #2f6061;
 }
@@ -88,6 +92,14 @@ button:active {
     background-color: #2f6061;
     transform: translateY(3px);
     /*transform: translateX(3px);*/
+}
+
+.button--edit:hover {
+    color:#14d014;
+}
+
+.button--del:hover {
+    color: #F00;
 }
 
 #toTop:link,
