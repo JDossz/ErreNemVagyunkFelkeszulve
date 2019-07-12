@@ -120,7 +120,11 @@ input {
     animation-duration: 2s;
 }
 
-
+.div--error {
+    background: #F00;
+    border: 7px groove #D80000;
+    margin: 1%;
+}
 
 @keyframes colorToBlue {
     from {background-color: #7b8988;}
