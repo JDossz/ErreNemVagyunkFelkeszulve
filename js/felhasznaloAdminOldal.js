@@ -23,7 +23,7 @@ var User = {
     console.log(this.data); // ez ír bele a html-be
 
     var nodeTBody = document.querySelector('.usersTable');
-    //nodeTBody.textContent = '';
+    nodeTBody.textContent = '';
 
     for (var i = 0; i < this.data.length; i += 1) {
       var nodeTr = document.createElement('tr');
@@ -32,6 +32,14 @@ var User = {
         nodeTd.textContent = this.data[i][membername];
         nodeTr.appendChild(nodeTd);
       }
+      var nodeButtonEdit = document.createElement('button');
+      nodeButtonEdit.textContent = 'Szerkesztés';
+      // nodeButtonEdit.addEventListener('click', edit);
+      var nodeButtonDel = document.createElement('button');
+      nodeButtonDel.textContent = 'Törlés';
+      // nodeButtonDel.addEventListener('click', remove);
+      nodeTr.appendChild(nodeButtonEdit);
+      nodeTr.appendChild(nodeButtonDel);
       nodeTBody.appendChild(nodeTr);
     }
   },
