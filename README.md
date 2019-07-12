@@ -1,5 +1,5 @@
 Dorka:
-login oldal animálása --> bejelentkező ablak leereszkedik a helyére
+login oldal animálása
 
 Rebeka:
 loginOldal.html
@@ -10,7 +10,8 @@ Szilvi:
 új felhasználó bevitele --> ide error ha üres vmelyik input
 
 Oláh:
-felhasznalokAdminOldal --> szerkesztés, input validálás, felugró ablak a törlés és szerkesztés megerősítéséhez
+felhasznalokAdminOldal --> szerkesztés gomb, input validálás
+felugró ablak a törlés és szerkesztés megerősítéséhez
 
 Tomi:
 loginOldal.js
@@ -18,7 +19,9 @@ loginOldal.js
 
 
 
+
 ami még kell:
+loginOldal a login ablakon nyíljon meg (scroll down)
 loginOnldal bejelentkezési error
 felhasználó törlése
 fő css
