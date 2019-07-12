@@ -1,4 +1,46 @@
-.usersTable {
+.usersTable {}
 
+/*
+#2f6061
+#7b8988
+#323131
+#c2a7a1
+#feeae2
+*/
+
+
+body {
+    margin: 0;
+    background-color: #feeae2;
+    background-image: url(../img/skyline.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
+header {
+    min-height: 500px;
+}
+
+.container {
+    background: #7b8988;
+    border-radius: 20px;
+    margin: 50px auto;
+    position: relative;
+    height: 60vh;
+    width: 40vw;
+}
+
+#navbarDiv {
+    float: right;
+    margin-top: 20px;
+}
+
+nav a {
+    color: #feeae2;
+    padding: 0 30px;
+    font-size: 15pt;
+}
+
+nav a:hover {
+    color: #323131;
+}

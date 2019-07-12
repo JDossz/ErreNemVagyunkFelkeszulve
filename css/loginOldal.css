@@ -4,12 +4,13 @@
 #323131
 #c2a7a1
 #feeae2
+#8a9695;
 */
 
 
 body {
     margin: 0;
-    background-color: #feeae2;
+    background-color: #8a9695;
     background-image: url(../img/skyline4.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -20,18 +21,15 @@ header {
 }
 
 .container {
-    background: #7b8988;
-    border-radius: 20px;
-    margin: 50px auto;
-    position: relative;
+    background: #8a9695;
+    margin: 100px auto;
     height: 60vh;
     width: 40vw;
+    -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
 }
 
-.div {
-    padding: 10px;
-    background-repeat: no-repeat;
-}
 
 #navbarDiv {
     float: right;
@@ -41,29 +39,42 @@ header {
 nav a {
     color: #feeae2;
     padding: 0 30px;
+    font-size: 15pt;
 }
 
 nav a:hover {
     color: #323131;
 }
 
-.div-rounded {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    background-image: url(../img/);
-    margin: 30px auto 50px;
+.div {
+    padding: 10px;
+    background-repeat: no-repeat;
 }
 
-.div-image {
-    height: 30px;
-    width: 30px;
+.div-rounded {
+    background-image: url(../img/team.png);
     background-size: 100%;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin: auto;
 }
 
 .user-icon {
-    background-image: url(../img/);
+    background-image: url(../img/user\ \(2\).png);
 }
+
+.password-icon {
+    background-image: url(../img/padlock.png);
+}
+
+.div-image {
+    height: 70px;
+    width: 70px;
+    background-size: 100%;
+    margin: 10px;
+}
+
 
 .div-input {}
 
@@ -71,28 +82,24 @@ input {
     padding: 10px;
     width: 300px;
     height: 20px;
-    border-radius: 30px;
+    border-radius: 5px;
 }
 
-
-.password-icon {
-    background-image: url(../img/);
-}
 
 .rowDiv {
-    overflow: auto;
-    padding: 10px;
-    width: 100%;
+    padding: 20px;
 }
 
-/* .rowDiv>div {
-    float: left;
-} */
+.rowDiv>div {
+    display: inline;
+
+}
 
 .button {
+    background-color: #7b8988;
     padding: 10px;
     border-radius: 5px;
     margin: auto;
-    background-color: #2f6061;
+    border: 1px solid #feeae2;
     color: #feeae2;
 }
