@@ -1,5 +1,3 @@
-.usersTable {}
-
 /*
 #2f6061
 #7b8988
@@ -12,7 +10,7 @@
 body {
     margin: 0;
     background-color: #8a9695;
-    background-image: url(../img/skyline.jpeg);
+    background-image: url(../img/skyline4.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -21,14 +19,6 @@ header {
     min-height: 700px;
 }
 
-.container {
-    background: #7b8988;
-    border-radius: 20px;
-    margin: 50px auto;
-    position: relative;
-    height: 60vh;
-    width: 40vw;
-}
 
 #navbarDiv {
     float: right;
@@ -43,4 +33,46 @@ nav a {
 
 nav a:hover {
     color: #323131;
+}
+
+.usersTable {
+    margin: 20px auto;
+    padding: 20px;
+}
+
+th {
+    font-size: 15pt;
+    color: #272626;
+}
+
+.usersTable,
+th,
+td {
+    padding: 10px;
+    border-collapse: collapse;
+    /*border-bottom: 1px solid #2f6061;*/
+}
+
+.usersTable th,
+tr:nth-child(even) {
+    background-color: #7b8988;
+}
+
+
+.usersTable tr:nth-child(odd) {
+    background-color: #8a9695;
+}
+
+td {
+    color: #272626;
+}
+
+button {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #8a9695;
+    border: 1px solid #2f6061;
+    color: #2f6061;
+    font-weight: 600;
 }

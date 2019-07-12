@@ -22,7 +22,7 @@ var User = {
   showAll() {
     console.log(this.data); // ez ír bele a html-be
 
-    var nodeTBody = document.querySelector('.usersTable');
+    var nodeTBody = document.querySelector('.usersTable>tbody');
     nodeTBody.textContent = '';
 
     for (var i = 0; i < this.data.length; i += 1) {
