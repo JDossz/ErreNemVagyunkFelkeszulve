@@ -1,9 +1,10 @@
 Dorka:
-adattömb kiíratása html-be
+login oldal animálása --> bejelentkező ablak leereszkedik a helyére
 
 Rebeka:
 loginOldal.html
 loginOldal.css
+adattömb kiíratása html-be
 
 Szilvi:
 új felhasználó bevitele --> ide error ha üres vmelyik input
@@ -18,6 +19,6 @@ loginOldal.js
 
 
 ami még kell:
-(login oldal animálása --> bejelentkező ablak leereszkedik a helyére)
+loginOnldal bejelentkezési error
 felhasználó törlése
 fő css
