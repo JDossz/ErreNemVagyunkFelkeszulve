@@ -26,27 +26,44 @@
   </header>
 
   <main>
+
     <div class="container">
-      <div class="div div-rounded"></div>
-      <div class="rowDiv">
-        <div class="div div-image user-icon"></div>
-        <div class="div div-input">
-          <input type="email"
-                 name="emailInput"
-                 id="emailInput">
+      <div class="registration visibilityNone">
+        <h2>Új felhasználó regisztrálása</h2>
+        <p>Új e-mail cím:</p>
+        <input type="email"
+               name="newEmailInput"
+               id="newEmailInput">
+        <p>Új jelszó</p>
+        <input type="password"
+               name="newPasswordInput"
+               id="newPasswordInput">
+        <div><button class="button newRegistrationButton">REGISZTRÁLOK</button></div>
+      </div>
+      <div class="loginInterface">
+        <div class="div div-rounded"></div>
+        <div class="rowDiv">
+          <div class="div div-image user-icon"></div>
+          <div class="div div-input">
+            <input type="email"
+                   name="emailInput"
+                   id="emailInput">
+          </div>
+        </div>
+        <div class="rowDiv">
+          <div class="div div-image password-icon"></div>
+          <div class="div div-input">
+            <input type="password"
+                   name="passwordInput"
+                   id="passwordInput">
+          </div>
+        </div>
+        <div class="div div-login rowDiv">
+          <button class="button loginButton">BEJELENTKEZÉS</button>
+          <button class="button newAdminButton">REGISZTRÁCIÓ</button>
         </div>
       </div>
-      <div class="rowDiv">
-        <div class="div div-image password-icon"></div>
-        <div class="div div-input">
-          <input type="password"
-                 name="passwordInput"
-                 id="passwordInput">
-        </div>
-      </div>
-      <div class="div div-login rowDiv">
-        <button class="button loginButton">BEJELENTKEZÉS</button>
-      </div>
+
     </div>
   </main>
 

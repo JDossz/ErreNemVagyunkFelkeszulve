@@ -103,3 +103,19 @@ input {
     border: 1px solid #feeae2;
     color: #feeae2;
 }
+
+.container {
+    text-align: center;
+}
+
+.visibilityNone {
+    display: none;
+}
+
+.visibility {
+    display: visible;
+}
+
+.newRegistrationButton {
+    margin-top: 30px;
+}
