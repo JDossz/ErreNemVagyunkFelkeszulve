@@ -20,6 +20,28 @@ var adminUsers = [{
 }
 ];
 
+function displayErrorNoticeForThreeSeconds() {
+  var errorDiv = document.querySelector('.div--error');
+  errorDiv.classList.remove('visibilityNone');
+  setTimeout(errorAlert, 3000);
+}
+
+function errorAlert() {
+  var errorDiv = document.querySelector('.div--error');
+  errorDiv.classList.add('visibilityNone');
+}
+
+function displaySuccessNoticeForThreeSeconds() {
+  var successDiv = document.querySelector('.div--newUserSuccess');
+  successDiv.textContent = 'Sikeres regisztráció!';
+  successDiv.classList.remove('visibilityNone');
+  setTimeout(successAlert, 3000);
+}
+
+function successAlert() {
+  var successDiv = document.querySelector('.div--newUserSuccess');
+  successDiv.classList.add('visibilityNone');
+}
 
 // ha az felhasználó input mező és pw mező értéke típusosan-azonosan egyenlő, akkor vigyen át a felhaszanloAdminOldal.html-re
 var loginButton = document.querySelector('.loginButton');
@@ -36,24 +58,20 @@ function loginClickHandler() {
       break;
     } else if (emailInputValue === adminUsers[i].email && passwordInputValue !== adminUsers[i].password) {
       errorDiv.textContent = 'Hibás jelszó!';
-      errorDiv.classList.remove('visibilityNone');
+      displayErrorNoticeForThreeSeconds();
       break;
     } else if (emailInputValue !== adminUsers[i].email && passwordInputValue === adminUsers[i].password) {
       errorDiv.textContent = 'Hibás felhasználónév!';
-      errorDiv.classList.remove('visibilityNone');
+      displayErrorNoticeForThreeSeconds();
       break;
     } else if (emailInputValue !== adminUsers[i].email || emailInputValue === '') {
       errorDiv.textContent = 'Nincs ilyen felhasználó!';
-      errorDiv.classList.remove('visibilityNone');
+      displayErrorNoticeForThreeSeconds();
       break;
     }
   }
 }
 
-function closeNotification() {
-  var errorDiv = document.querySelector('.div--error');
-  errorDiv.classList.add('visibilityNone');
-}
 
 var newAdminButton = document.querySelector('.newAdminButton');
 newAdminButton.addEventListener('click', adminButtonClickHandler, false);
@@ -73,17 +91,19 @@ newRegistration.addEventListener('click', newRegistrationClickHandler, false);
 function newRegistrationClickHandler() {
   var newEmail = document.querySelector('#newEmailInput');
   var newPassword = document.querySelector('#newPasswordInput');
-
+  var errorDiv = document.querySelector('.div--error');
 
   for (var i = 0; i < adminUsers.length; i += 1) {
     if (newEmail.value === adminUsers[i].email) {
-      alert('Már van ilyen felhasználó');
+      errorDiv.textContent = 'Már van ilyen felhasználó!';
+      displayErrorNoticeForThreeSeconds();
       break;
     } else {
       adminUsers.push({
         email: newEmail.value,
         password: newPassword.value
       });
+      displaySuccessNoticeForThreeSeconds();
       break;
     }
   }
