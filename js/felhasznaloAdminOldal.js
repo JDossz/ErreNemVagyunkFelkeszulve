@@ -1,6 +1,6 @@
 var User = {
   data: [],
-  
+
   getData() {
     var request = new XMLHttpRequest();
     request.onreadystatechange = () => {
@@ -11,13 +11,13 @@ var User = {
     request.open('GET', '/data/users.json');
     request.send();
   },
-  
+
   callback(jsonContent) {
     this.data = JSON.parse(jsonContent).users;
     this.showAll();
   },
   showAll() {
-    console.log(this.data); 
+    console.log(this.data);
   },
   remove() {},
   create() {},

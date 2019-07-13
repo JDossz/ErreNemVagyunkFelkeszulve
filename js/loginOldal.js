@@ -22,29 +22,29 @@ var adminUsers = [{
 
 function displayErrorNoticeForThreeSeconds() {
   var errorDiv = document.querySelector('.div--error');
-  errorDiv.classList.remove('visibilityNone');
+  errorDiv.classList.remove('visibility-none');
   setTimeout(errorAlert, 3000);
 }
 
 function errorAlert() {
   var errorDiv = document.querySelector('.div--error');
-  errorDiv.classList.add('visibilityNone');
+  errorDiv.classList.add('visibility-none');
 }
 
 function displaySuccessNoticeForThreeSeconds() {
-  var successDiv = document.querySelector('.div--newUserSuccess');
+  var successDiv = document.querySelector('.div--new-user-success');
   successDiv.textContent = 'Sikeres regisztráció!';
-  successDiv.classList.remove('visibilityNone');
+  successDiv.classList.remove('visibility-none');
   setTimeout(successAlert, 3000);
 }
 
 function successAlert() {
-  var successDiv = document.querySelector('.div--newUserSuccess');
-  successDiv.classList.add('visibilityNone');
+  var successDiv = document.querySelector('.div--new-user-success');
+  successDiv.classList.add('visibility-none');
 }
 
 // ha az felhasználó input mező és pw mező értéke típusosan-azonosan egyenlő, akkor vigyen át a felhaszanloAdminOldal.html-re
-var loginButton = document.querySelector('.loginButton');
+var loginButton = document.querySelector('.button--login-button');
 loginButton.addEventListener('click', loginClickHandler, false);
 
 function loginClickHandler() {
@@ -73,19 +73,19 @@ function loginClickHandler() {
 }
 
 
-var newAdminButton = document.querySelector('.newAdminButton');
+var newAdminButton = document.querySelector('.button-new--admin-button');
 newAdminButton.addEventListener('click', adminButtonClickHandler, false);
 
 function adminButtonClickHandler() {
   var registration = document.querySelector('.registration');
   var login = document.querySelector('.loginInterface');
 
-  registration.classList.remove('visibilityNone');
+  registration.classList.remove('visibility-none');
   registration.classList.add('visbility');
-  login.classList.add('visibilityNone');
+  login.classList.add('visibility-none');
 }
 
-var newRegistration = document.querySelector('.newRegistrationButton');
+var newRegistration = document.querySelector('.button--new-registration-button');
 newRegistration.addEventListener('click', newRegistrationClickHandler, false);
 
 function newRegistrationClickHandler() {

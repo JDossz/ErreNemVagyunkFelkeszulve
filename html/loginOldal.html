@@ -1,75 +1,76 @@
 <!DOCTYPE html>
 <html lang="hu">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible"
-          content="ie=edge">
 
-    <title>Login Oldal</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible"
+        content="ie=edge">
 
-    <link rel="stylesheet"
-          href="../css/loginOldal.css">
+  <title>Login Oldal</title>
 
-  </head>
-  <body>
-    <header>
-      <div id="navbarDiv">
-        <nav>
-          <a href="">BEJELENTKEZÉS</a>
-          <a href="">FELHASZNÁLÓK</a>
-        </nav>
+  <link rel="stylesheet"
+        href="../css/loginOldal.css">
+
+</head>
+
+<body>
+  <header>
+    <div id="navbarDiv">
+      <nav>
+        <a href="">BEJELENTKEZÉS</a>
+        <a href="">FELHASZNÁLÓK</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="registration visibility-none">
+        <h2>Új adminisztrátor hozzáadása</h2>
+        <p>Új e-mail cím:</p>
+        <input type="email"
+               name="newEmailInput"
+               id="newEmailInput">
+        <p>Új jelszó</p>
+        <input type="password"
+               name="newPasswordInput"
+               id="newPasswordInput">
+        <div><button class="button button--new-registration-button">&#10004; REGISZTRÁLOK</button></div>
       </div>
-    </header>
-    <main>
-      <div class="container">
-        <div class="registration visibilityNone">
-          <h2>Új adminisztrátor hozzáadása</h2>
-          <p>Új e-mail cím:</p>
-          <input type="email"
-                name="newEmailInput"
-                id="newEmailInput">
-          <p>Új jelszó</p>
-          <input type="password"
-                name="newPasswordInput"
-                id="newPasswordInput">
-          <div><button class="button newRegistrationButton">&#10004; REGISZTRÁLOK</button></div>
-        </div>
-        <div class="loginInterface">
-          <div class="div div-rounded"></div>
-          <div class="rowDiv">
-            <div class="div div-image user-icon"></div>
-            <div class="div div-input">
-              <input type="email"
-                    name="emailInput"
-                    id="emailInput">
-            </div>
-          </div>
-          <div class="rowDiv">
-            <div class="div div-image password-icon"></div>
-            <div class="div div-input">
-              <input type="password"
-                    name="passwordInput"
-                    id="passwordInput">
-            </div>
-          </div>
-          <div class="div div-login rowDiv">
-            <button class="button loginButton">BEJELENTKEZÉS</button>
-            <button class="button newAdminButton">&#10000; REGISZTRÁCIÓ</button>
+      <div class="loginInterface">
+        <div class="div div-rounded"></div>
+        <div class="rowDiv">
+          <div class="div div-image user-icon"></div>
+          <div class="div div-input">
+            <input type="email"
+                   name="emailInput"
+                   id="emailInput">
           </div>
         </div>
-        <div class="div div--error visibilityNone">
-          <span class="error"></span>
+        <div class="rowDiv">
+          <div class="div div-image password-icon"></div>
+          <div class="div div-input">
+            <input type="password"
+                   name="passwordInput"
+                   id="passwordInput">
+          </div>
         </div>
-        <div class="div div--newUserSuccess visibilityNone">
-          <span class="newUserSuccess"></span>
+        <div class="div div-login rowDiv">
+          <button class="button button--login-button">BEJELENTKEZÉS</button>
+          <button class="button button-new--admin-button">&#10000; REGISZTRÁCIÓ</button>
         </div>
       </div>
-    </main>
+      <div class="div div--error visibility-none">
+      </div>
+      <div class="div div--new-user-success visibility-none">
+      </div>
+    </div>
+  </main>
 
 
 
-    <script src="../js/loginOldal.js"></script>
-  </body>
+  <script src="../js/loginOldal.js"></script>
+</body>
+
 </html>
