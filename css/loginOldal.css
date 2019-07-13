@@ -92,7 +92,7 @@ input {
 }
 
 .rowDiv>div {
-    display: inline;    
+    display: inline;
 }
 
 .button {
@@ -115,6 +115,7 @@ input {
 .newRegistrationButton {
     margin-top: 30px;
 }
+
 .button:hover {
     animation-name: colorToBlue;
     animation-duration: 2s;
@@ -126,52 +127,72 @@ input {
     margin: 1%;
 }
 
+.div--newUserSuccess {
+    background: #32CD32;
+    border: 7px groove #00FF00;
+    margin: 1%;
+}
+
 @keyframes colorToBlue {
-    from {background-color: #7b8988;}
-    to {background-color: #00176E;}
+    from {
+        background-color: #7b8988;
+    }
+
+    to {
+        background-color: #00176E;
+    }
 }
 
 @keyframes slideDown {
     0% {
         position: fixed;
-        top: -100px;;
-        left: 30%;   
+        top: -100px;
+        ;
+        left: 30%;
     }
+
     30% {
         position: fixed;
         top: 0;
         left: 30%;
     }
+
     40% {
         position: fixed;
         top: 10%;
         left: 30%;
     }
+
     50% {
-            position: fixed;
-            top: 20%;
-            left: 30%;
-        }
+        position: fixed;
+        top: 20%;
+        left: 30%;
+    }
+
     60% {
         position: fixed;
         top: 30%;
         left: 30%;
     }
+
     70% {
         position: fixed;
         top: 40%;
         left: 30%;
     }
+
     80% {
         position: fixed;
         top: 50%;
         left: 30%;
     }
+
     90% {
         position: fixed;
         top: 60%;
         left: 30%;
     }
+
     100% {
         position: relative;
     }

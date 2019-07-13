@@ -28,20 +28,31 @@ loginButton.addEventListener('click', loginClickHandler, false);
 function loginClickHandler() {
   var emailInputValue = document.querySelector('#emailInput').value;
   var passwordInputValue = document.querySelector('#passwordInput').value;
+  var errorDiv = document.querySelector('.div--error');
 
   for (var i = 0; i < adminUsers.length; i += 1) {
     if (emailInputValue === adminUsers[i].email && passwordInputValue === adminUsers[i].password) {
       window.location = '../html/felhasznaloAdminOldal.html';
       break;
     } else if (emailInputValue === adminUsers[i].email && passwordInputValue !== adminUsers[i].password) {
-      alert('Hibás jelszó');
+      errorDiv.textContent = 'Hibás jelszó!';
+      errorDiv.classList.remove('visibilityNone');
+      break;
     } else if (emailInputValue !== adminUsers[i].email && passwordInputValue === adminUsers[i].password) {
-      alert('Hibás felhasználónév');
+      errorDiv.textContent = 'Hibás felhasználónév!';
+      errorDiv.classList.remove('visibilityNone');
+      break;
     } else if (emailInputValue !== adminUsers[i].email || emailInputValue === '') {
-      alert('Nincs ilyen felhasználó');
+      errorDiv.textContent = 'Nincs ilyen felhasználó!';
+      errorDiv.classList.remove('visibilityNone');
       break;
     }
   }
+}
+
+function closeNotification() {
+  var errorDiv = document.querySelector('.div--error');
+  errorDiv.classList.add('visibilityNone');
 }
 
 var newAdminButton = document.querySelector('.newAdminButton');
