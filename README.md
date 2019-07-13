@@ -30,4 +30,4 @@ loginOldal.js
 ami még kell:
 loginOldal a login ablakon állva nyíljon meg (scroll down)
 a felhasználói oldal a táblázaton állva nyíljon meg
-
+footer
