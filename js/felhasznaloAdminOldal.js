@@ -1,11 +1,8 @@
 var User = {
   data: [],
-  //   init() {
-  //     this.getData();
-  //   },
+
   getData() {
     var request = new XMLHttpRequest();
-    // a this itt az xmlhttprequest lenne, ezért arrow function-nal kell írni, mert az nem bind-onja a this-t
     request.onreadystatechange = () => {
       if (request.readyState === 4 && request.status === 200) {
         this.callback(request.responseText);
@@ -14,7 +11,7 @@ var User = {
     request.open('GET', '/data/users.json');
     request.send();
   },
-  // ezzel töltöm fel a data tömböt, ha a válasz megérkezett
+
   callback(jsonContent) {
     this.data = JSON.parse(jsonContent).users;
     this.showAll();
@@ -60,12 +57,16 @@ var User = {
         // álljon meg, ha true
         break;
       }
+
+      if (isItNew) {
+        this.data.push(newUser);
+      }
+      console.log(this.data);
+      // Szilvi vége
     }
-    if (isItNew) {
-      this.data.push(newUser);
-    }
+
+    User.showAll();
     console.log(this.data);
-    // Szilvi vége
   }
 
 };
@@ -78,12 +79,9 @@ var modal = document.getElementById('id01');
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
-  if (event.target == modal) {
+  if (event.target === modal) {
     modal.style.display = 'none';
   }
-};
-
-function inputResetButton() {
-  document.getElementById('registerForm').reset();
+  return result;
 }
-// +szilvi vége
+;
