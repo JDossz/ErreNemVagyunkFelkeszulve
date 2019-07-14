@@ -103,3 +103,39 @@ input {
     border: 1px solid #feeae2;
     color: #feeae2;
 }
+
+
+footer {
+    box-sizing: border-box;
+    bottom: 0;
+    width: 100%;
+    background-color: #2f6061;
+    opacity: 0.8;
+    clear: both;
+    padding: 15px;
+}
+
+footer div {
+    width: 50vw;
+    margin: auto;
+    text-align: center;
+}
+
+hr {
+    width: 80vW;
+    height: 2px;
+    color: #000;
+    background-color: #000;
+    border: none;
+}
+
+footer a img {
+    height: 5%;
+    width: 5%;
+    margin: 2% 5%;
+}
+
+footer a img:hover {
+    height: 6%;
+    width: 6%;
+}
