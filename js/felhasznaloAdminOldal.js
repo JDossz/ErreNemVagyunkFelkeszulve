@@ -58,11 +58,7 @@ var User = {
     }
 
     User.showAll();
-<<<<<<< HEAD
-    WarnGenerator.deleteWarn();
-=======
-    console.log(this.data);
->>>>>>> 618baecf49604a2aa38b27845a51962d16b138c7
+    // WarnGenerator.deleteWarn();
   },
   create() {},
   stored() {}
