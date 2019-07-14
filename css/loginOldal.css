@@ -19,7 +19,6 @@ header {
     min-height: 450px;
 }
 
-
 #navbarDiv {
     float: right;
     margin-top: 20px;
@@ -107,21 +106,22 @@ input {
     color: #feeae2;
 }
 
-.visibility-none {
-    display: none;
-}
-
-.visibility {
-    display: visible;
+.button:hover {
+    /* animation-name: colorToBlue;
+    animation-duration: 2s; */
+    background: #00176E;
 }
 
 .button--new-registration-button {
     margin-top: 30px;
 }
 
-.button:hover {
-    animation-name: colorToBlue;
-    animation-duration: 2s;
+.visibility-none {
+    display: none;
+}
+
+.visibility {
+    display: visible;
 }
 
 .div--error {
@@ -136,7 +136,7 @@ input {
     margin: 1%;
 }
 
-@keyframes colorToBlue {
+/* @keyframes colorToBlue {
     from {
         background-color: #7b8988;
     }
@@ -144,7 +144,7 @@ input {
     to {
         background-color: #00176E;
     }
-}
+} */
 
 @keyframes slideDown {
     0% {
