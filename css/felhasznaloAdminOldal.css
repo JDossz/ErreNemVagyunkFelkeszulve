@@ -166,6 +166,7 @@ footer a img:hover {
   transition: height 2s;
   height: 30px;
   font-size: 25px;
+  transition: display 1.5s;
 }
 
 .red-warn {
@@ -181,4 +182,16 @@ footer a img:hover {
 .green-warn {
   background-color: #90EE90;
   display: block;
+}
+
+td>input[type=text] {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 6px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+td>input[type=text]:focus {
+  background-color: lightgray;
 }

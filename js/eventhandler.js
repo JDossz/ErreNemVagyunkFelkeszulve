@@ -56,7 +56,7 @@ var EventHandler = {
     EventHandler.removeButtonListeners();
     EventHandler.addButtonListeners();
     EventHandler.writeUserData(row);
-    WarnGenerator.successWarn();
+    // WarnGenerator.successWarn();
     // Üres validálás
   },
   cancelButtonEvent() {
@@ -74,7 +74,7 @@ var EventHandler = {
     row.children[5].innerHTML = '❌ Törlés';
     EventHandler.removeButtonListeners();
     EventHandler.addButtonListeners();
-    WarnGenerator.cancelWarn();
+    // WarnGenerator.cancelWarn();
   },
   writeUserData(record) {
     let userID = parseInt(record.children[0].innerHTML);
