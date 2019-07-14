@@ -35,6 +35,8 @@ function windowLoadHandler() {
 
 var errorDiv = document.querySelector('.div--error');
 var successDiv = document.querySelector('.div--new-user-success');
+var registration = document.querySelector('.registration');
+var login = document.querySelector('.loginInterface');
 
 function loginClickHandler() {
   var emailInputValue = document.querySelector('#emailInput').value;
@@ -62,12 +64,15 @@ function loginClickHandler() {
 
 
 function adminButtonClickHandler() {
-  var registration = document.querySelector('.registration');
-  var login = document.querySelector('.loginInterface');
-
   registration.classList.remove('visibility-none');
   registration.classList.add('visbility');
   login.classList.add('visibility-none');
+}
+
+function loginAfterRegistration() {
+  registration.classList.remove('visibility');
+  registration.classList.add('visibility-none');
+  login.classList.remove('visibility-none');
 }
 
 
@@ -92,6 +97,7 @@ function newRegistrationClickHandler() {
       displaySuccessNoticeForThreeSeconds();
       newEmail.value = '';
       newPassword.value = '';
+      loginAfterRegistration();
       break;
     }
   }
