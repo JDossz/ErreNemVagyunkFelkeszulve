@@ -158,6 +158,9 @@ footer a img:hover {
 }
 
 #felugroablak {
+  display: none;
+  padding-left: auto;
+  padding-right: auto;
   position: fixed;
   width: 100%;
   transition: height 2s;
@@ -165,18 +168,17 @@ footer a img:hover {
   font-size: 25px;
 }
 
-.felugro {
-  height: 50px;
-}
-
 .red-warn {
   background-color: #FF7F7F;
+  display: block;
 }
 
 .yellow-warn {
   background: #FFFF88;
+  display: block;
 }
 
 .green-warn {
   background-color: #90EE90;
+  display: block;
 }
