@@ -10,6 +10,7 @@ loginOldal.css
 adattömb kiíratása a felhasznaloiAdminOldal.html-be
 felhasznaloiAdminOldal.css
 felhasználó törlése gomb
+footer
 
 Szilvi:
 új felhasználó bevitele
@@ -30,4 +31,3 @@ loginOldal.js
 ami még kell:
 loginOldal a login ablakon állva nyíljon meg (scroll down)
 a felhasználói oldal a táblázaton állva nyíljon meg
-footer
