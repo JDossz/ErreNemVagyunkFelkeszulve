@@ -72,6 +72,9 @@ var User = {
 };
 User.getData();
 
+function inputResetButton() {
+  document.getElementById('registerForm').reset();
+}
 
 // +szilvi
 // Get the modal
