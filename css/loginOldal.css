@@ -104,6 +104,12 @@ input {
     color: #feeae2;
 }
 
+.button:hover {
+    /* animation-name: colorToBlue;
+    animation-duration: 2s; */
+    background: #00176E;
+}
+
 .visibility-none {
     display: none;
 }
@@ -114,11 +120,6 @@ input {
 
 .button--new-registration-button {
     margin-top: 30px;
-}
-
-.button:hover {
-    animation-name: colorToBlue;
-    animation-duration: 2s;
 }
 
 .div--error {
@@ -133,7 +134,7 @@ input {
     margin: 1%;
 }
 
-@keyframes colorToBlue {
+/* @keyframes colorToBlue {
     from {
         background-color: #7b8988;
     }
@@ -141,7 +142,7 @@ input {
     to {
         background-color: #00176E;
     }
-}
+} */
 
 @keyframes slideDown {
     0% {
