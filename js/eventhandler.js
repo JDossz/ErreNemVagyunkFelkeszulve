@@ -48,11 +48,20 @@ var EventHandler = {
     while (row.nodeName !== 'TR') {
       row = row.parentNode;
     }
-    row.children[1].innerHTML = row.children[1].children[0].value;
-    row.children[2].innerHTML = row.children[2].children[0].value;
-    row.children[3].innerHTML = row.children[3].children[0].value;
-    row.children[4].innerHTML = '✎ Szerkesztés';;
-    row.children[5].innerHTML = '❌ Törlés';
+    if (row.children[1].children[0].value === '' ||
+      row.children[2].children[0].value === '' ||
+      row.children[3].children[0].value === ''
+    ) {
+      row.children[1].innerHTML = EventHandler.tmpName;
+      row.children[2].innerHTML = EventHandler.tmpMail;
+      row.children[3].innerHTML = EventHandler.tmpAddress;
+    } else {
+      row.children[1].innerHTML = row.children[1].children[0].value;
+      row.children[2].innerHTML = row.children[2].children[0].value;
+      row.children[3].innerHTML = row.children[3].children[0].value;
+      row.children[4].innerHTML = '✎ Szerkesztés';;
+      row.children[5].innerHTML = '❌ Törlés';
+    }
     EventHandler.removeButtonListeners();
     EventHandler.addButtonListeners();
     EventHandler.writeUserData(row);
