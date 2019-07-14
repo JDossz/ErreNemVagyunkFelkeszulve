@@ -17,7 +17,6 @@ var User = {
     this.showAll();
   },
   showAll() {
-<<<<<<< HEAD
     // console.log(this.data); // ez ír bele a html-be
 
     var nodeTBody = document.querySelector('.usersTable>tbody');
@@ -59,16 +58,13 @@ var User = {
     }
 
     User.showAll();
-=======
     console.log(this.data);
->>>>>>> login-feature
   },
   create() {},
   stored() {}
 
 };
 User.getData();
-<<<<<<< HEAD
 
 function getUserById(userID) {
   var result = null;
@@ -81,5 +77,3 @@ function getUserById(userID) {
   }
   return result;
 }
-=======
->>>>>>> login-feature
