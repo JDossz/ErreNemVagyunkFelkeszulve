@@ -55,7 +55,8 @@ var EventHandler = {
     row.children[5].innerHTML = '❌ Törlés';
     EventHandler.removeButtonListeners();
     EventHandler.addButtonListeners();
-    // TODO: felugróablak
+    EventHandler.writeUserData(row);
+    WarnGenerator.successWarn();
     // Üres validálás
   },
   cancelButtonEvent() {
@@ -73,8 +74,15 @@ var EventHandler = {
     row.children[5].innerHTML = '❌ Törlés';
     EventHandler.removeButtonListeners();
     EventHandler.addButtonListeners();
-    // TODO: felugróablak
+    WarnGenerator.cancelWarn();
   },
+  writeUserData(record) {
+    let userID = parseInt(record.children[0].innerHTML);
+    let user = getUserById(userID);
+    user.name = record.children[1].innerHTML;
+    user.emailAddress = record.children[2].innerHTML;
+    user.address = record.children[3].innerHTML;
+  }
 };
 
 $(document).ready(function () {

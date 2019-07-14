@@ -61,6 +61,7 @@ var User = {
     }
 
     User.showAll();
+    WarnGenerator.deleteWarn();
   },
   create() {},
   stored() {}
