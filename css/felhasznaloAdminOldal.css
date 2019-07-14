@@ -6,7 +6,6 @@
 #feeae2
 */
 
-
 body {
     margin: 0;
     background-color: #97c6d3;
@@ -33,6 +32,7 @@ nav a {
 nav a:hover {
     color: #323131;
 }
+<<<<<<< HEAD
 
 .usersTable {
     margin: 20px auto;
@@ -161,3 +161,5 @@ footer a img:hover {
     display: none;
     
 }
+=======
+>>>>>>> login-feature

@@ -7,7 +7,6 @@
 #8a9695;
 */
 
-
 body {
     margin: 0;
     background-color: #8a9695;
@@ -17,19 +16,8 @@ body {
 }
 
 header {
-    min-height: 500px;
+    min-height: 450px;
 }
-
-.container {
-    background: #8a9695;
-    margin: 100px auto;
-    height: 60vh;
-    width: 40vw;
-    -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
-}
-
 
 #navbarDiv {
     float: right;
@@ -44,6 +32,25 @@ nav a {
 
 nav a:hover {
     color: #323131;
+}
+
+.container {
+    background: #8a9695;
+    margin: 95px auto;
+    height: 60vh;
+    width: 40vw;
+    -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation-name: slideDown;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+.container--inside {
+    position: relative;
+    top: 35px;
 }
 
 .div {
@@ -61,7 +68,7 @@ nav a:hover {
 }
 
 .user-icon {
-    background-image: url(../img/user\ \(2\).png);
+    background-image: url(../img/user2.png);
 }
 
 .password-icon {
@@ -75,9 +82,6 @@ nav a:hover {
     margin: 10px;
 }
 
-
-.div-input {}
-
 input {
     padding: 10px;
     width: 300px;
@@ -85,14 +89,12 @@ input {
     border-radius: 5px;
 }
 
-
 .rowDiv {
     padding: 20px;
 }
 
 .rowDiv>div {
     display: inline;
-
 }
 
 .button {
@@ -138,4 +140,98 @@ footer a img {
 footer a img:hover {
     height: 6%;
     width: 6%;
+}
+.button:hover {
+    /* animation-name: colorToBlue;
+    animation-duration: 2s; */
+    background: #00176E;
+}
+
+.button--new-registration-button {
+    margin-top: 30px;
+}
+
+.visibility-none {
+    display: none;
+}
+
+.visibility {
+    display: visible;
+}
+
+.div--error {
+    background: #F00;
+    border: 7px groove #D80000;
+    margin: 1%;
+}
+
+.div--new-user-success {
+    background: #32CD32;
+    border: 7px groove #00FF00;
+    margin: 1%;
+}
+
+/* @keyframes colorToBlue {
+    from {
+        background-color: #7b8988;
+    }
+
+    to {
+        background-color: #00176E;
+    }
+} */
+
+@keyframes slideDown {
+    0% {
+        position: fixed;
+        top: -100px;
+        ;
+        left: 30%;
+    }
+
+    30% {
+        position: fixed;
+        top: 0;
+        left: 30%;
+    }
+
+    40% {
+        position: fixed;
+        top: 10%;
+        left: 30%;
+    }
+
+    50% {
+        position: fixed;
+        top: 20%;
+        left: 30%;
+    }
+
+    60% {
+        position: fixed;
+        top: 30%;
+        left: 30%;
+    }
+
+    70% {
+        position: fixed;
+        top: 40%;
+        left: 30%;
+    }
+
+    80% {
+        position: fixed;
+        top: 50%;
+        left: 30%;
+    }
+
+    90% {
+        position: fixed;
+        top: 60%;
+        left: 30%;
+    }
+
+    100% {
+        position: relative;
+    }
 }

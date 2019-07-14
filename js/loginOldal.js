@@ -1,32 +1,113 @@
-var User = {
-  data: [],
-  //   init() {
-  //     this.getData();
-  //   },
-  getData() {
-    var request = new XMLHttpRequest();
-    // a this itt az xmlhttprequest lenne, ezért arrow function-nal kell írni, mert az nem bind-onja a this-t
-    request.onreadystatechange = () => {
-      if (request.readyState === 4 && request.status === 200) {
-        this.callback(request.responseText);
-      }
-    };
-    request.open('GET', '/data/users.json');
-    request.send();
+var adminUsers = [
+  {
+    email: 'tamas.takacs@gmail.com',
+    password: 'Tomi@88'
   },
-  // ezzel töltöm fel a data tömböt, ha a válasz megérkezett
-  callback(jsonContent) {
-    this.data = JSON.parse(jsonContent).users;
-    this.showAll();
+  {
+    email: 'rebeka.grosics@gmail.com',
+    password: 'Rebeka@9'
   },
-  showAll() {
-    console.log(this.data); // ez ír bele a html-be
+  {
+    email: 'daniel.olah@gmail.com',
+    password: 'Olah@6'
   },
-  remove() {},
-  create() {},
-  stored() {}
+  {
+    email: 'dorottya.juhasz@gmail.com',
+    password: 'Dorka@42'
+  },
+  {
+    email: 'szilvia.horvath@gmail.com',
+    password: 'Szilvi@3'
+  }
+];
 
-};
-User.getData();
+function displayErrorNoticeForThreeSeconds() {
+  var errorDiv = document.querySelector('.div--error');
+  errorDiv.classList.remove('visibility-none');
+  setTimeout(errorAlert, 3000);
+}
+
+function errorAlert() {
+  var errorDiv = document.querySelector('.div--error');
+  errorDiv.classList.add('visibility-none');
+}
+
+function displaySuccessNoticeForThreeSeconds() {
+  var successDiv = document.querySelector('.div--new-user-success');
+  successDiv.textContent = 'Sikeres regisztráció!';
+  successDiv.classList.remove('visibility-none');
+  setTimeout(successAlert, 3000);
+}
+
+function successAlert() {
+  var successDiv = document.querySelector('.div--new-user-success');
+  successDiv.classList.add('visibility-none');
+}
+
+// ha a felhasználó input mező és pw mező értéke típusosan-azonosan egyenlő, akkor vigyen át a felhaszanloAdminOldal.html-re
+var loginButton = document.querySelector('.button--login-button');
+loginButton.addEventListener('click', loginClickHandler, false);
+
+function loginClickHandler() {
+  var emailInputValue = document.querySelector('#emailInput').value;
+  var passwordInputValue = document.querySelector('#passwordInput').value;
+  var errorDiv = document.querySelector('.div--error');
+
+  for (var i = 0; i < adminUsers.length; i += 1) {
+    if (emailInputValue === adminUsers[i].email && passwordInputValue === adminUsers[i].password) {
+      window.location = '../html/felhasznaloAdminOldal.html';
+      break;
+    } else if (emailInputValue === adminUsers[i].email && passwordInputValue !== adminUsers[i].password) {
+      errorDiv.textContent = 'Hibás jelszó!';
+      displayErrorNoticeForThreeSeconds();
+      break;
+    } else if (emailInputValue !== adminUsers[i].email && passwordInputValue === adminUsers[i].password) {
+      errorDiv.textContent = 'Hibás felhasználónév!';
+      displayErrorNoticeForThreeSeconds();
+      break;
+    } else if (emailInputValue !== adminUsers[i].email || emailInputValue === '') {
+      errorDiv.textContent = 'Nincs ilyen felhasználó!';
+      displayErrorNoticeForThreeSeconds();
+      break;
+    }
+  }
+}
 
 
+var newAdminButton = document.querySelector('.button-new--admin-button');
+newAdminButton.addEventListener('click', adminButtonClickHandler, false);
+
+function adminButtonClickHandler() {
+  var registration = document.querySelector('.registration');
+  var login = document.querySelector('.loginInterface');
+
+  registration.classList.remove('visibility-none');
+  registration.classList.add('visbility');
+  login.classList.add('visibility-none');
+}
+
+var newRegistration = document.querySelector('.button--new-registration-button');
+newRegistration.addEventListener('click', newRegistrationClickHandler, false);
+
+function newRegistrationClickHandler() {
+  var newEmail = document.querySelector('#newEmailInput');
+  var newPassword = document.querySelector('#newPasswordInput');
+  var errorDiv = document.querySelector('.div--error');
+
+  for (var i = 0; i < adminUsers.length; i += 1) {
+    if (newEmail.value === adminUsers[i].email) {
+      errorDiv.textContent = 'Már van ilyen felhasználó!';
+      displayErrorNoticeForThreeSeconds();
+      break;
+    } else {
+      adminUsers.push({
+        email: newEmail.value,
+        password: newPassword.value
+      });
+      displaySuccessNoticeForThreeSeconds();
+      break;
+    }
+  }
+  newEmail.value = '';
+  newPassword.value = '';
+}
