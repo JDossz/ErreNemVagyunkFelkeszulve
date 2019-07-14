@@ -26,44 +26,46 @@
   </header>
   <main>
     <div class="container">
-      <div class="registration visibility-none">
-        <h2>Új adminisztrátor hozzáadása</h2>
-        <p>Új e-mail cím:</p>
-        <input type="email"
-               name="newEmailInput"
-               id="newEmailInput">
-        <p>Új jelszó</p>
-        <input type="password"
-               name="newPasswordInput"
-               id="newPasswordInput">
-        <div><button class="button button--new-registration-button">&#10004; REGISZTRÁLOK</button></div>
-      </div>
-      <div class="loginInterface">
-        <div class="div div-rounded"></div>
-        <div class="rowDiv">
-          <div class="div div-image user-icon"></div>
-          <div class="div div-input">
-            <input type="email"
-                   name="emailInput"
-                   id="emailInput">
+      <div class="container--inside">
+        <div class="registration visibility-none">
+          <h2>Új adminisztrátor hozzáadása</h2>
+          <p>Új e-mail cím:</p>
+          <input type="email"
+                 name="newEmailInput"
+                 id="newEmailInput">
+          <p>Új jelszó:</p>
+          <input type="password"
+                 name="newPasswordInput"
+                 id="newPasswordInput">
+          <div><button class="button button--new-registration-button">&#10004; REGISZTRÁLOK</button></div>
+        </div>
+        <div class="loginInterface">
+          <div class="div div-rounded"></div>
+          <div class="rowDiv">
+            <div class="div div-image user-icon"></div>
+            <div class="div div-input">
+              <input type="email"
+                     name="emailInput"
+                     id="emailInput">
+            </div>
+          </div>
+          <div class="rowDiv">
+            <div class="div div-image password-icon"></div>
+            <div class="div div-input">
+              <input type="password"
+                     name="passwordInput"
+                     id="passwordInput">
+            </div>
+          </div>
+          <div class="div div-login rowDiv">
+            <button class="button button--login-button">BEJELENTKEZÉS</button>
+            <button class="button button-new--admin-button">&#10000; REGISZTRÁCIÓ</button>
           </div>
         </div>
-        <div class="rowDiv">
-          <div class="div div-image password-icon"></div>
-          <div class="div div-input">
-            <input type="password"
-                   name="passwordInput"
-                   id="passwordInput">
-          </div>
+        <div class="div div--error visibility-none">
         </div>
-        <div class="div div-login rowDiv">
-          <button class="button button--login-button">BEJELENTKEZÉS</button>
-          <button class="button button-new--admin-button">&#10000; REGISZTRÁCIÓ</button>
+        <div class="div div--new-user-success visibility-none">
         </div>
-      </div>
-      <div class="div div--error visibility-none">
-      </div>
-      <div class="div div--new-user-success visibility-none">
       </div>
     </div>
   </main>
