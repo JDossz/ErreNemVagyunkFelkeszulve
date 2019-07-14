@@ -35,7 +35,7 @@ var User = {
       var nodeButtonEdit = document.createElement('button');
       nodeButtonEdit.textContent = '✎ Szerkesztés';
       nodeButtonEdit.setAttribute('class', 'button--edit');
-      // nodeButtonEdit.addEventListener('click', edit);
+      nodeButtonEdit.addEventListener('click', EventHandler.editButtonEvent);
       var nodeButtonDel = document.createElement('button');
       nodeButtonDel.textContent = '❌ Törlés';
       nodeButtonDel.setAttribute('class', 'button--del');
