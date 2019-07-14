@@ -7,153 +7,153 @@
 */
 
 body {
-    margin: 0;
-    background-color: #97c6d3;
-    background-image: url(../img/skyline2.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
+  margin: 0;
+  background-color: #97c6d3;
+  background-image: url(../img/skyline2.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 header {
-    min-height: 600px;
+  min-height: 600px;
 }
 
 #navbarDiv {
-    float: right;
-    margin-top: 20px;
+  float: right;
+  margin-top: 20px;
 }
 
 nav a {
-    color: #feeae2;
-    padding: 0 30px;
-    font-size: 15pt;
+  color: #feeae2;
+  padding: 0 30px;
+  font-size: 15pt;
 }
 
 nav a:hover {
-    color: #323131;
+  color: #323131;
 }
 
 .usersTable {
-    margin: 20px auto;
-    padding: 20px;
+  margin: 20px auto;
+  padding: 20px;
 }
 
 th {
-    font-size: 15pt;
-    color: #272626;
+  font-size: 15pt;
+  color: #272626;
 }
 
 .usersTable,
 th,
 td {
-    padding: 10px;
-    border-collapse: collapse;
-    /*border-bottom: 1px solid #2f6061;*/
+  padding: 10px;
+  border-collapse: collapse;
+  /*border-bottom: 1px solid #2f6061;*/
 }
 
 .usersTable th,
 tr:nth-child(even) {
-    background-color: #5691c2;
+  background-color: #5691c2;
 }
 
 
 .usersTable tr:nth-child(odd) {
-    background-color: #4eadb1;
+  background-color: #4eadb1;
 }
 
 tr:hover {
-    font-style: italic;
-    font-weight: bold;
+  font-style: italic;
+  font-weight: bold;
 }
 
 td {
-    color: #272626;
+  color: #272626;
 }
 
 button {
-    padding: 5px;
-    margin: 5px;
-    border-radius: 5px;
-    background-color: #97c6d3;
-    border: 1px solid #2f6061;
-    color: #2f6061;
-    font-weight: 600;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: #97c6d3;
+  border: 1px solid #2f6061;
+  color: #2f6061;
+  font-weight: 600;
 }
 
 button:hover {
-    border: 1px solid #feeae2;
-    background-color: #2f6061;
+  border: 1px solid #feeae2;
+  background-color: #2f6061;
 }
 
 button:active {
-    color: #272626;
-    border: 1px solid #272626;
-    background-color: #2f6061;
-    transform: translateY(3px);
-    /*transform: translateX(3px);*/
+  color: #272626;
+  border: 1px solid #272626;
+  background-color: #2f6061;
+  transform: translateY(3px);
+  /*transform: translateX(3px);*/
 }
 
 .button--edit:hover {
-    color: #14d014;
+  color: #14d014;
 }
 
 .button--del:hover {
-    color: #F00;
+  color: #F00;
 }
 
 #toTop:link,
 #toTop:visited {
-    color: green;
-    text-decoration: none;
-    font-size: 15pt;
-    float: right;
-    margin: 20px;
+  color: green;
+  text-decoration: none;
+  font-size: 15pt;
+  float: right;
+  margin: 20px;
 }
 
 #toTop:hover {
-    color: green;
-    text-decoration: underline;
-    font-size: 17pt;
-    /* font-variant: small-caps;
+  color: green;
+  text-decoration: underline;
+  font-size: 17pt;
+  /* font-variant: small-caps;
     font-stretch: extra-condensed; */
-    float: right;
-    margin: 20px;
+  float: right;
+  margin: 20px;
 }
 
 
 footer {
-    box-sizing: border-box;
-    bottom: 0;
-    width: 100%;
-    background-color: #2f6061;
-    opacity: 0.8;
-    clear: both;
-    padding: 15px;
+  box-sizing: border-box;
+  bottom: 0;
+  width: 100%;
+  background-color: #2f6061;
+  opacity: 0.8;
+  clear: both;
+  padding: 15px;
 }
 
 footer div {
-    width: 50vw;
-    margin: auto;
-    text-align: center;
+  width: 50vw;
+  margin: auto;
+  text-align: center;
 }
 
 hr {
-    width: 80vW;
-    height: 2px;
-    color: #000;
-    background-color: #000;
-    border: none;
+  width: 80vW;
+  height: 2px;
+  color: #000;
+  background-color: #000;
+  border: none;
 }
 
 footer a img {
-    height: 5%;
-    width: 5%;
-    margin: 2% 5%;
+  height: 5%;
+  width: 5%;
+  margin: 2% 5%;
 }
 
 footer a img:hover {
-    height: 6%;
-    width: 6%;
+  height: 6%;
+  width: 6%;
 }
 
 #felugroablak {
