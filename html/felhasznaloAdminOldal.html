@@ -2,162 +2,72 @@
 <html lang="hu">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible"
-        content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+          content="ie=edge">
 
-  <title>Felhasználó Admin Oldal</title>
+    <title>Felhasználó Admin Oldal</title>
 
-  <link rel="stylesheet"
-        href="../css/felhasznaloAdminOldal.css">
+    <link rel="stylesheet"
+          href="../css/felhasznaloAdminOldal.css">
 </head>
 
 <body>
-
-  <!-- <div
-          id="navbarDiv">
-    <nav>
-      <a href="">BEJELENTKEZÉS</a>
-      <a href="">FELHASZNÁLÓK</a>
-    </nav>
-    </div> -->
-
-
-
-
-
-  <h2>Új felhasználó létrehozása</h2>
-
-  <button onclick="document.getElementById('id01').style.display='block'"
-          style="width:auto;">Regisztráció</button>
-
-  <div id="id01"
-       class="modal">
-
-    <form class="modal-content animate"
-          action="/action_page.php"
-          id="registerForm">
-      <div class="imgcontainer">
-        <span onclick="document.getElementById('id01').style.display='none'"
-              class="close"
-              title="Close Modal">&times;</span>
-        <img src="/img/registerUser.png"
-             alt="Avatar"
-             class="regAvatar">
-      </div>
-
-      <div class="registerContainer">
-
-
-        <label for="uname"><b>Teljes név</b></label>
-        <input id="registerUserName"
-               type="text"
-               name="name"
-               placeholder="Teljes név">
-
-        <label for="email"><b>Email-cím</b></label>
-        <input id="registerUserEmailAddress"
-               type="email"
-               name="emailAddress"
-               placeholder="Email-cím">
-
-        <label for="address"><b>Lakcím</b></label>
-        <input id="registerUserAddress"
-               type="text"
-               name="address"
-               placeholder="Lakcím">
-
-        <button onclick="User.registerUser()"
-                type="button">Regisztrálok</button>
-        <input type="button"
-               onclick="inputResetButton()"
-               value="Mezők törlése">
-        <label>
-          <input type="checkbox"
-                 checked="checked"
-                 name="remember"> Remember me
-        </label>
-        <button type="button"
-                onclick="document.getElementById('id01').style.display='none'"
-                class="cancelbtn">Cancel</button>
-        <span class="psw">Forgot <a href="#">password?</a></span>
-      </div>
-
-
-    </form>
-  </div>
-
-  <script src="../js/felhasznaloAdminOldal.js"></script>
-  =======
-  <div id="felugroablak">
-    <div>
-      <button>OK</button>
-      <button>Mégse</button>
+    <div id="felugroablak">
+        <div>
+            <button>OK</button>
+            <button>Mégse</button>
+        </div>
     </div>
-  </div>
-  <header id="top">
+    <header id="top">
+        <div id="navbarDiv">
+            <nav>
+                <a href="../html/loginOldal.html">BEJELENTKEZÉS</a>
+            </nav>
+        </div>
+    </header>
+    <table class="usersTable">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Név</th>
+                <th>Email-cím</th>
+                <th>Cím</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
 
-    <div id="navbarDiv">
-      <nav>
-        <a href="../html/loginOldal.html">BEJELENTKEZÉS</a>
-      </nav>
+        </tbody>
+    </table>
+    <div class="divToTop">
+        <a id="toTop"
+           href="#top">Ugrás az oldal tetjére <b>&#128414;</b></a>
     </div>
-  </header>
+    <footer>
+        <div>
+            <a href="https://thumbs.gfycat.com/AbsoluteParchedLabradorretriever-size_restricted.gif">
+                <img src="../img/facebook-logo-in-circular-shape.png"
+                     alt="facebook logó">
+            </a>
+            <a href="https://thumbs.gfycat.com/AbsoluteParchedLabradorretriever-size_restricted.gif">
+                <img src="../img/instagram-logo.png"
+                     alt="instargram logó">
+            </a>
+            <a href="https://thumbs.gfycat.com/AbsoluteParchedLabradorretriever-size_restricted.gif">
+                <img src="../img/tripadvisor-logotype.png"
+                     alt="tripadvisor logó">
+            </a>
+        </div>
+        <hr>
+    </footer>
 
 
-  <table class="usersTable">
-    <thead>
-      <tr>
-        <th></th>
-        <th>Név</th>
-        <th>Email-cím</th>
-        <th>Cím</th>
-        <th></th>
-      </tr>
-    </thead>
-
-
-
-    <tbody>
-
-    </tbody>
-  </table>
-  <div class="divToTop">
-    <a id="toTop"
-       href="#top">Ugrás az oldal tetejére <b>&#128414;</b></a>
-  </div>
-
-
-  <footer>
-    <div>
-      <a
-         href="https://thumbs.gfycat.com/AbsoluteParchedLabradorretriever-size_restricted.gif">
-        <img src="../img/facebook-logo-in-circular-shape.png"
-             alt="facebook logó">
-      </a>
-      <a
-         href="https://thumbs.gfycat.com/AbsoluteParchedLabradorretriever-size_restricted.gif">
-        <img src="../img/instagram-logo.png"
-             alt="instargram logó">
-      </a>
-      <a
-         href="https://thumbs.gfycat.com/AbsoluteParchedLabradorretriever-size_restricted.gif">
-        <img src="../img/tripadvisor-logotype.png"
-             alt="tripadvisor logó">
-      </a>
-    </div>
-    <hr>
-  </footer>
-
-
-  <script
-          src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
-  </script>
-  <script src="../js/felhasznaloAdminOldal.js"></script>
-  <script src="../js/eventhandler.js"></script>
-  >>>>>>> e0b97c48344b8c2f32b1865248d400eb164309f6
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../js/felhasznaloAdminOldal.js"></script>
+    <script src="../js/eventhandler.js"></script>
 </body>
 
 </html>
