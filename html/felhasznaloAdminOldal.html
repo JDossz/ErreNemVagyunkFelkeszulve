@@ -15,29 +15,46 @@
 </head>
 
 <body>
-  <header>
-    <div id="navbarDiv">
-      <nav>
-        <a href="">BEJELENTKEZÉS</a>
-        <a href="">FELHASZNÁLÓK</a>
-      </nav>
-    </div>
-  </header>
-  <table class="usersTable">
-    <thead>
-      <tr>
-        <th>Név</th>
-        <th>Email-cím</th>
-        <th>Jelszó</th>
-      </tr>
-    </thead>
-    <tbody>
 
-    </tbody>
+  <div id="navbarDiv">
+    <nav>
+      <a href="">BEJELENTKEZÉS</a>
+      <a href="">FELHASZNÁLÓK</a>
+    </nav>
+  </div>
+
+  <table class="usersTable">
+    <!--<thead>
+      <tr>
+        <th id="addNewName">Név</th>
+        <th id="addNewEmailAddress">Email-cím</th>
+        <th id="addNewPass"> Jelszó</th>
+      </tr>
+     </thead>-->
+    <form id="myform">
+      <h2>Új felhasználó létrehozása</h2>
+      Írd be a neved:<input id="registerUserName"
+             type="text"
+             name="name"
+             placeholder="Teljes név">
+      Írd be az Email-címed:<input id="registerUserEmailAddress"
+             type="email"
+             name="emailAddress"
+             placeholder="Email-cím">
+      Írd be a lakcímed:<input id="registerUserAddress"
+             type="text"
+             name="address"
+             placeholder="Lakcím">
+
+      <button onclick="User.registerUser()"
+              type="button">Regisztrálok</button>
+    </form>
+
   </table>
 
 
   <script src="../js/felhasznaloAdminOldal.js"></script>
+
 </body>
 
 </html>
