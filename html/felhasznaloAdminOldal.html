@@ -28,6 +28,69 @@
             </nav>
         </div>
     </header>
+
+    <h2 class="new-user">Új felhasználó létrehozása</h2>
+
+    <button class="new-user--button"
+            onclick="document.getElementById('id01').style.display='block'"
+            style="width:auto;">Regisztráció</button>
+
+    <div id="id01"
+         class="modal">
+
+        <form class="modal-content animate"
+              action="/action_page.php"
+              id="registerForm">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'"
+                      class="close"
+                      title="Close Modal">&times;</span>
+                <img src="/img/registerUser.png"
+                     alt="Avatar"
+                     class="regAvatar">
+            </div>
+
+            <div class="registerContainer">
+
+
+                <label for="uname"><b>Teljes név</b></label>
+                <input id="registerUserName"
+                       type="text"
+                       name="name"
+                       placeholder="Teljes név">
+
+                <label for="email"><b>Email-cím</b></label>
+                <input id="registerUserEmailAddress"
+                       type="email"
+                       name="emailAddress"
+                       placeholder="Email-cím">
+
+                <label for="address"><b>Lakcím</b></label>
+                <input id="registerUserAddress"
+                       type="text"
+                       name="address"
+                       placeholder="Lakcím">
+
+                <button onclick="User.registerUser()"
+                        type="button">Regisztrálok</button>
+                <input type="button"
+                       onclick="inputResetButton()"
+                       value="Mezők törlése">
+                <label>
+                    <input type="checkbox"
+                           checked="checked"
+                           name="remember"> Remember me
+                </label>
+                <button type="button"
+                        onclick="document.getElementById('id01').style.display='none'"
+                        class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+
+
+        </form>
+    </div>
+
     <table class="usersTable">
         <thead>
             <tr>

@@ -13,6 +13,7 @@ body {
     background-image: url(../img/skyline4.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
+    height: 100%;
 }
 
 header {
