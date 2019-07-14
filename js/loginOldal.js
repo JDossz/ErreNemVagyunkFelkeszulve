@@ -1,23 +1,24 @@
-var adminUsers = [{
-  email: 'tamas.takacs@gmail.com',
-  password: 'Tomi@88'
-},
-{
-  email: 'rebeka.grosics@gmail.com',
-  password: 'Rebeka@9'
-},
-{
-  email: 'daniel.olah@gmail.com',
-  password: 'Olah@6'
-},
-{
-  email: 'dorottya.juhasz@gmail.com',
-  password: 'Dorka@42'
-},
-{
-  email: 'szilvia.horvath@gmail.com',
-  password: 'Szilvi@3'
-}
+var adminUsers = [
+  {
+    email: 'tamas.takacs@gmail.com',
+    password: 'Tomi@88'
+  },
+  {
+    email: 'rebeka.grosics@gmail.com',
+    password: 'Rebeka@9'
+  },
+  {
+    email: 'daniel.olah@gmail.com',
+    password: 'Olah@6'
+  },
+  {
+    email: 'dorottya.juhasz@gmail.com',
+    password: 'Dorka@42'
+  },
+  {
+    email: 'szilvia.horvath@gmail.com',
+    password: 'Szilvi@3'
+  }
 ];
 
 function displayErrorNoticeForThreeSeconds() {
@@ -43,7 +44,7 @@ function successAlert() {
   successDiv.classList.add('visibility-none');
 }
 
-// ha az felhasználó input mező és pw mező értéke típusosan-azonosan egyenlő, akkor vigyen át a felhaszanloAdminOldal.html-re
+// ha a felhasználó input mező és pw mező értéke típusosan-azonosan egyenlő, akkor vigyen át a felhaszanloAdminOldal.html-re
 var loginButton = document.querySelector('.button--login-button');
 loginButton.addEventListener('click', loginClickHandler, false);
 
