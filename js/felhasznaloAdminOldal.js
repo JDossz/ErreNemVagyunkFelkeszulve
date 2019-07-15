@@ -107,21 +107,8 @@ var User = {
 
 User.getData();
 
-function getUserById(userID) {
-  var result = null;
 
-  for (var i = 0; i < User.data.length; i++) {
-    if (userID === User.data[i].id) {
-      result = User.data[i];
-      break;
-    }
-  }
-  return result;
-}
 
-function inputResetButton() {
-  document.getElementById('registerForm').reset();
-}
 
 
 // Get the modal
@@ -134,3 +121,7 @@ window.onclick = function (event) {
   }
   return result;
 };
+
+function inputResetButton() {
+  document.getElementById('registerForm').reset();
+}
