@@ -46,7 +46,11 @@ function loginClickHandler() {
     if (emailInputValue === adminUsers[i].email && passwordInputValue === adminUsers[i].password) {
       window.location = '../html/felhasznaloAdminOldal.html';
       break;
-    } else if (emailInputValue === adminUsers[i].email && passwordInputValue !== adminUsers[i].password) {
+    }
+  }
+
+  for (var i = 0; i < adminUsers.length; i += 1) {
+    if (emailInputValue === adminUsers[i].email && passwordInputValue !== adminUsers[i].password) {
       errorDiv.textContent = 'Hibás jelszó!';
       displayErrorNoticeForThreeSeconds();
       break;
@@ -54,7 +58,7 @@ function loginClickHandler() {
       errorDiv.textContent = 'Hibás felhasználónév!';
       displayErrorNoticeForThreeSeconds();
       break;
-    } else if (emailInputValue !== adminUsers[i].email || emailInputValue === '') {
+    } else {
       errorDiv.textContent = 'Nincs ilyen felhasználó!';
       displayErrorNoticeForThreeSeconds();
       break;
