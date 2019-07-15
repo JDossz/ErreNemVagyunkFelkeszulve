@@ -35,6 +35,10 @@ nav a:hover {
     color: #323131;
 }
 
+main {
+    min-height: 350px;
+}
+
 .container {
     background: #8a9695;
     margin: 95px auto;
@@ -110,8 +114,10 @@ input {
 
 
 footer {
+    position: sticky;
     box-sizing: border-box;
     bottom: 0;
+    height: 110px;
     width: 100%;
     background-color: #2f6061;
     opacity: 0.8;
