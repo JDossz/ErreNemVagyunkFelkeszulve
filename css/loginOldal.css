@@ -222,23 +222,23 @@ footer a img:hover {
         left: 30%;
     }
 
-    70% {
+    90% {
         position: fixed;
         top: 40%;
         left: 30%;
     }
 
-    80% {
+    /* 80% {
         position: fixed;
         top: 50%;
         left: 30%;
-    }
+    } */
 
-    90% {
+    /* 90% {
         position: fixed;
         top: 60%;
         left: 30%;
-    }
+    } */
 
     100% {
         position: relative;
